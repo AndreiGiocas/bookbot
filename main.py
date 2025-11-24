@@ -12,7 +12,7 @@ def main():
         sys.exit(1)
     #book = "/home/shirokets/workspace/github.com/AndreiGiocas/bookbot/bookbot/books/frankenstein.txt"
     print("============ BOOKBOT ============")
-    print("Analyzing book found at books/frankenstein.txt...")
+    print(f"Analyzing book found at {sys.argv[1]}...")
     print("----------- Word Count ----------")
     print(f"Found {number_of_words(get_book_text(sys.argv[1]))} total words")
     print("--------- Character Count -------")
